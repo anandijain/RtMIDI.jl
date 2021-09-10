@@ -1,0 +1,9 @@
+name = "RtMIDI"
+uuid = "003e8c73-c8da-4c88-ace0-65eb1d1f5d4f"
+authors = ["anand jain <anandj@uchicago.edu>"]
+version = "0.1.0"
+
+[deps]
+Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
+MIDI = "f57c4921-e30c-5f49-b073-3f2f2ada663e"
+rtmidi_jll = "dca704ad-10d6-524d-beb3-49f38e318998"
