@@ -18,10 +18,6 @@ struct RtMidiWrapper
 end
 const RtMidiPtr = Ref{RtMidiWrapper}
 
-function rtmidi_sizeof_rtmidi_api()::Int
-    Int(ccall((:rtmidi_sizeof_rtmidi_api, rtmidi), Cint, ()))
-end
-
 function rtmidi_get_port_count(device::RtMidiPtr)::Int
     Int(ccall((:rtmidi_get_port_count, rtmidi), Cuint, (Ptr{Cvoid},), device))
 end
@@ -82,8 +78,8 @@ end
 
 export rtm
 
-export RtMidiCCallback, RtMidiInData, RtMidiWrapper, RtMidiPtr, 
-rtmidi_sizeof_rtmidi_api, rtmidi_get_port_count, rtmidi_get_port_name, 
+export RtMidiCCallback, RtMidiInData, RtMidiWrapper, RtMidiPtr,
+rtmidi_get_port_count, rtmidi_get_port_name, 
 rtmidi_open_port, destroy, rtmidi_in_create_default, rtmidi_in_get_message, 
 rtmidi_in_set_callback, rtmidi_in_cancel_callback, EventCB, rtmidi_callback_func, 
 rtmidi_out_create_default, rtmidi_out_send_message
