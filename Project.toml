@@ -5,8 +5,13 @@ version = "0.1.0"
 
 [deps]
 Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
-MIDI = "f57c4921-e30c-5f49-b073-3f2f2ada663e"
+CEnum = "fa961155-64e5-5f13-b03f-caf6b980ea82"
 rtmidi_jll = "dca704ad-10d6-524d-beb3-49f38e318998"
+
+[compat]
+CEnum = "0.4"
+# rtmidi_jll = "4.0"
+julia = "1.6"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
