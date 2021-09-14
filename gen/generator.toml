@@ -1,5 +1,5 @@
 [general]
-library_name = "librtmidi"
+library_name = "rtmidi"
 output_file_path = "./Lib.jl"
 module_name = "Lib"
 jll_pkg_name = "rtmidi_jll"
