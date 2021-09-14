@@ -1,6 +1,8 @@
 module RtMIDI
 
+
 include("../gen/Lib.jl")
+include("utils.jl")
 using .Lib:
     RtMidiCCallback, RtMidiWrapper, RtMidiPtr, rtmidi_get_compiled_api, 
     rtmidi_api_name, rtmidi_api_display_name, rtmidi_compiled_api_by_name, 
@@ -20,5 +22,8 @@ export
     rtmidi_in_cancel_callback, rtmidi_in_ignore_types, rtmidi_in_get_message, 
     rtmidi_out_create_default, rtmidi_out_create, rtmidi_out_free, 
     rtmidi_out_get_current_api, rtmidi_out_send_message
+
+
+export list_midi_ports, EventCB, rtmidi_callback_func
 
 end # module
